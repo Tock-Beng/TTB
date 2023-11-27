@@ -97,12 +97,13 @@ padding
     padding: 15px;
     
     flex-direction: row;
+    
 }
 
 .footer a{
     color: white;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 15px;
     flex-direction: row;
     align-items: flex-start;
 }
@@ -111,7 +112,8 @@ padding
     display: flex;
     align-items: flex-end;
     /* width: 60%; */
-    padding-left: 47%;
+    padding-left: 40%;
+    
 }
 
 body, html {
@@ -336,3 +338,6 @@ margin: 100px;
     padding: 50px;
     
 }
+
+
+/* store page */
