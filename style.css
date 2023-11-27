@@ -10,7 +10,7 @@ header {
     margin: 0;
     padding: 20px;
     justify-content: space-between;
-
+    
 }
 
 .navbar .logo img {
@@ -196,7 +196,6 @@ font-size: x-large;
     list-style-type: none;
     font-size: 30px;
     margin: 0 100px;
-
 }
 
 .background3 .hist {
@@ -254,16 +253,17 @@ margin: 100px;
     top: 7%;
     left: 40%; */
     display: flex;
-    
+    justify-content: space-around;
+    flex-wrap: wrap;     
+    margin: 40px;
+    flex-basis: 20%;
     /* padding-top: 20%;
-    padding-left: 40%; */
-    padding: 50px;
-    
+    padding-left: 40%;
+    padding: 50px; */
 }
 
 
-/* 
-.background4 .info h1{
+/* .background4 .info h1{
     font-size: 30px;
     color: red;
     padding-top: 45px;
@@ -278,33 +278,6 @@ margin: 100px;
     padding-left: 20%;
     font-size: 20px;
 } */
-
-/* .background4 .tour2 img {
-    width: 300px; 
-    height: auto; 
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-    top: 7%;
-    left: 40%;
-} */
-
-/* .background4 .info2 h1{
-    font-size: 30px;
-    color: red;
-    padding-top: 20px;
-    padding-left: 45%;
-} 
-
- .background4 .info2 p{
-    text-align: center;
-    width: 60%;
-    color: white;
-    padding-top: 20px;
-    padding-left: 20%;
-    font-size: 20px;
-} */
-
 
 
 .background5 {
@@ -341,3 +314,48 @@ margin: 100px;
 
 
 /* store page */
+.category ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.category ul li {
+    width: 200px;
+    height: 100px;
+    float: left;
+    list-style-type: none;
+    font-size: 30px;
+    margin-top: 50px;
+    
+}
+
+.category ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.clothing{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+.merch{
+    margin: 40px;
+    flex-basis: 25%;
+}
+
+.merch .shirt, .desc, .price{
+    width: 300px;
+    text-align: center;
+}
+
+/* @media (max-width: 600px) {
+    .merch{
+        flex-basis: 100%;
+    }
+    
+} */
+
+
