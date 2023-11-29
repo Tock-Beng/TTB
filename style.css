@@ -1,10 +1,15 @@
-
-
-header {
+*{
     padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;     not sure if needed */
 }
 
-.navbar {
+header {
+    /* padding: 0; */
+    background-color: #333;
+}
+
+/* .navbar {
     display: flex;
     background-color: #333;
     margin: 0;
@@ -34,43 +39,176 @@ header {
     height: 45px;
     cursor: pointer;
 
-}
-
-/* .navbar #profile{
-display: flex;
-justify-content: flex-end;
-
-}
-
-.navbar #profile img{
-width: 45px;
-height: 45px;
-cursor: pointer;
-}
-
-.navbar #cart img{
-width: 50px;
-height: 50px;
-cursor: pointer;
 } */
 
-.navbar a {
+/* desktop nav */
+
+#navbar,
+.nav-menu {
     display: flex;
+}
 
-    align-items: end;
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
+#navbar {
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+    align-items: center;
+    /* height: 17vh; */
+    height: 100px;
+    
+}
 
+#navbar .logo img {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+}
+#navbar .nav-menu {
+    margin-left: auto;
+    margin-right: 50px;
+    gap: 2rem;
+    list-style: none;
+    font-size: 25px;
     cursor: pointer;
     transition: color 0.15s;
+}
+
+#navbar a {
+    /* display: flex; */
+    /* align-items: end; */
+    /* font-size: 25px; */
+    /* transition: color 0.15s; */
+    color: white;
+    text-decoration: none;
     margin-left: 40px;
 }
 
-.navbar a:hover {
+/* #navbar .nav-links{
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+} */
+
+#navbar .nav-menu a:hover {
     background-color: #333;
     color: red;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: red;
 }
+
+
+
+
+/*burger menu*/
+
+#burger-nav{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease in-out;
+    transition: all 0.3s ease in-out;
+    background-color: white;
+}
+
+@media screen and (max-width: 1000px){
+    #burger-nav{
+        display: block;
+    }
+
+    #burger-nav .active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #burger-nav .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #burger-nav .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }   
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu,.active{
+        left: 0;
+    }
+}
+/* #burger-nav .burger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+#burger-nav .burger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+#burger-nav .burger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3 ease-in-out;
+  }
+#burger-nav .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    /* width: fit-content; *
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+  } */
+  
+
+/* media queries */
+
+
+  
+  /* nav bar */
+  /* @media screen and (max-width: 1200px) {
+    #navbar{
+      display: none;
+    }
+    #burger-nav {
+      display: flex;
+    }
+    #navbar .logo img {
+        width: 30px;  /* Adjust the size for screens below 1200px *
+        height: 20px; /* Adjust the corresponding height *
+    }
+} */
+
+
+
+
+
 
 
 /* #homepage{
@@ -103,9 +241,10 @@ padding
 .footer a{
     color: white;
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 20px;
     flex-direction: row;
     align-items: flex-start;
+    flex-grow: 1;
 }
 
 .footer .icons{
@@ -113,7 +252,8 @@ padding
     align-items: flex-end;
     /* width: 60%; */
     padding-left: 40%;
-    
+    /* margin-right: 20px; */
+    flex-grow: 1;
 }
 
 body, html {
@@ -124,11 +264,13 @@ body, html {
 
 .homepage {
     background-image: url('images/concert1.jpeg');
+    /* height: 100%; */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
 }
 
 /* .background2 {
@@ -150,33 +292,44 @@ body, html {
     display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /* align-items: center; */
+    /* flex-direction: column; */
 }
 
-/* .background4 .h1{
-    color: white;   
-} */
+#tour-title{
+    display: block;
+    flex-basis: 100%;
+}
 
-.tour-page .tour img {
+.tour-page .title{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    margin: 25px;
+    width: 100%;   
+}
+
+.tour-page .tour-info img {
     width: 300px; /* Set the width of the image to 300px of its container */
     height: auto; /* Maintain the aspect ratio of the image */
-    /* max-width: 500px; Optionally, set a maximum width for the image */
-    /* display: block; Remove any extra spacing below the image  */
-    /* margin-top: 50px;
-    margin-left: 40%; */
-    /* position: relative;
-    top: 7%;
-    left: 40%; */
+    max-width: 500px; /*Optionally, set a maximum width for the image */
+     /*display: block; /*Remove any extra spacing below the image */
     display: flex;
-    justify-content: space-around;
+
     flex-wrap: wrap;     
-    margin: 40px;
-    flex-basis: 20%;
-    /* padding-top: 20%;
-    padding-left: 40%;
-    padding: 50px; */
+    margin: 40px 30px;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 
 /* .tour-page .info h1{
@@ -226,20 +379,27 @@ font-size: x-large;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
     display: flex;
-
     justify-content: center;
     margin: 0;
     padding: 0;
     
 }
 
+.about-us .aboutUs{
+    font-size: 30px;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    color: red;
+    margin: 30px;
+}
+
 .about-us ul {
     display: flex;
     justify-content: center;
     text-align: center;
-
+    margin: 20px;
 }
 
 .about-us ul li {
@@ -298,12 +458,7 @@ margin: 100px;
     width: 300px; /* Set the width of the image to 300px of its container */
     height: auto; /* Maintain the aspect ratio of the image */
     /* max-width: 500px; Optionally, set a maximum width for the image */
-    /* display: block; Remove any extra spacing below the image  */
-    /* margin-top: 50px;
-    margin-left: 40%; */
-    /* position: relative;
-    top: 7%;
-    left: 40%; */
+    /* display: block; /*Remove any extra spacing below the image*/  
     display: flex;
     /* padding-top: 20%;
     padding-left: 40%; */
@@ -318,6 +473,7 @@ margin: 100px;
     justify-content: center;
     text-align: center;
     font-weight: bold;
+    flex-wrap: wrap; /*not sure if it works*/
 }
 
 .category ul li {
@@ -327,12 +483,11 @@ margin: 100px;
     list-style-type: none;
     font-size: 30px;
     margin-top: 50px;
-    
+    cursor: pointer;
 }
 
-.category ul li:hover {
+.category ul li:first-child {
     color: red;
-    cursor: pointer;
 }
 
 .clothing{
@@ -352,7 +507,6 @@ margin: 100px;
 }
 
 .merch .shirt, .desc, .price{
-
     width: 300px;
     text-align: center;
 }

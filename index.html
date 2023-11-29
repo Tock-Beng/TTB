@@ -10,59 +10,86 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav id="navbar">
             <div class="logo">
                 <a href="#home"><img src="images/one ok rock logo.png" alt="logo"></a>
             </div>
             
-            <a href="#tour">Tour</a>
-            <a href="#about">About</a>
-            <a href="#music">Music</a>
-            <a href="#store">Store</a>             
 
-            <div class="icons"> 
-                <div class="cart">
-                    <a href="#"><img src="images/cart.png" alt="cart"></a>
-                </div>
-                <div class="profile">
-                    <a href="#"><img src="images/profile.png" alt="profile"></a>
-                </div>
-            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#tour">Tour</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#music">Music</a></li>
+                <li class="nav-item"><a href="#store">Store</a></li>
+            </ul>
+
         </nav>
+
+        <nav id="burger-nav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </nav>
+        <!-- <nav id="burger-nav">
+            <div class="logo" onclick="toggleMenu()"><a href="#home"><img src="images/one ok rock logo.png" alt="logo"></a></div>
+            <div class="burger-menu">
+              <div class="burger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="menu-links">
+                <li><a href="#tour" onclick="toggleMenu()">Tour</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#music" onclick="toggleMenu()">Music</a></li>
+                <li><a href="#store" onclick="toggleMenu()">Store</a></li>
+              </div>
+            </div>
+        </nav> -->
+        <script src="script.js"></script>
     </header>
 
     <a name="home">
         <div class="homepage"></div>
     </a>
 
-
-    <a name="tour">
+    <a id='tour-title' name="tour">
         <div class="tour-page">
-            <!-- <h1>Tour</h1> -->
-            <div class="tour">
+        <div class="title"><h1>Tour</h1></div>
+
+            <div class="tour-info">
+                <a href="#"><img src="images/tour.jpg" alt="tour"></a>       
+            </div>
+
+            <div class="tour-info">
                 <a href="#"><img src="images/tour.jpg" alt="tour"></a>
             </div>
 
-            <div class="tour">
+            <div class="tour-info">
                 <a href="#"><img src="images/tour.jpg" alt="tour"></a>
             </div>
 
-            <div class="tour">
+            <div class="tour-info">
                 <a href="#"><img src="images/tour.jpg" alt="tour"></a>
             </div>
 
-            <div class="tour">
-                <a href="#"><img src="images/tour.jpg" alt="tour"></a>
-            </div>
-
-            <div class="tour">
+            <div class="tour-info">
                 <a href="#"><img src="images/tour.jpg" alt="tour"></a>
             </div>
             
-            <div class="tour">
+            <div class="tour-info">
+                <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+            </div>
+            <div class="tour-info">
+                <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+            </div>
+            <div class="tour-info">
                 <a href="#"><img src="images/tour.jpg" alt="tour"></a>
             </div>
 
+        </div>    
+    </a>
 <!-- 
             <div class="info">
                 <h1>28/10/2023</h1>
@@ -86,8 +113,8 @@
                 <a href="#"><img src="images/tour2.jpg" alt="tour"></a>
             </div> -->
 
-        </div>
-    </a>
+        
+
 
     <a name="about">
         <div class="members"></div>
@@ -101,7 +128,9 @@
                     <li>Bass: RYOTA</li>
                 </ul>
             <br><br><br>
-            
+
+            <div class="aboutUs"><h1>About Us</h1></div>
+
             <div class="hist">
                 <p >ONE OK ROCK is a Japanese rock band formed in 2005 and debuted in 2007. ONE OK ROCK has cultivated a following among the youth for their mix of
                     emo and rock music paired with breathtaking live performances. Debuting in 2007, the band rose to the top of musical prominence, 
@@ -117,70 +146,82 @@
     </a>
 
     
-    <!-- <a name="music">
+    <a name="music">
          <div class="music">
             <div class="background5">
             <center><h1>Music</h1></center>
-
-            
+ 
             <div class="album">
                 <a href="https://open.spotify.com/album/1obI3635eoYwWYhGs2vEeP?si=DABjRmn-RWywxmITK1zt9g"><img src="images/rock.jpg" alt="rock"></a>
         
             </div>
         </div> 
+    </a>
 
-
-    </a> -->
-
-    <div class="category">
-        <ul>
-            <li>Home</li>
-            <li>Music</li>
-            <li>Apparel</li>
-            <li>Accessories</li>
-        </ul>
-    </div>
-
-    <div class="clothing">
-        <div class="merch">
-            <img class="shirt" src="images/shirt1.jpg" alt="shirt">
-            <p class="desc">LD Album Cover Tee</p>
-            <p class="price">$30.00</p>
+    <!--store page-->
+    <a name="store">
+        <div class="category">
+            <ul>
+                <li>Home</li>
+                <li>Music</li>
+                <li>Apparel</li>
+                <li>Accessories</li>
+            </ul>
         </div>
-    
-        <div class="merch">
-            <img class="shirt" src="images/shirt1.jpg" alt="shirt">
-            <p class="desc">LD Album Cover Tee</p>
-            <p class="price">$30.00</p>
-        </div>
+
+        <div class="clothing">
+            <div class="merch">
+                <img class="shirt" src="images/shirt1.jpg" alt="shirt">
+                <p class="desc">LD Album Cover Tee</p>
+                <p class="price">$30.00</p>
+            </div>
         
-        <div class="merch">
-            <img class="shirt" src="images/shirt1.jpg" alt="shirt">
-            <p class="desc">LD Album Cover Tee</p>
-            <p class="price">$30.00</p>
-        </div>
+            <div class="merch">
+                <img class="shirt" src="images/shirt1.jpg" alt="shirt">
+                <p class="desc">LD Album Cover Tee</p>
+                <p class="price">$30.00</p>
+            </div>
+            
+            <div class="merch">
+                <img class="shirt" src="images/shirt1.jpg" alt="shirt">
+                <p class="desc">LD Album Cover Tee</p>
+                <p class="price">$30.00</p>
+            </div>
 
-        <div class="merch">
-            <img class="shirt" src="images/shirt1.jpg" alt="shirt">
-            <p class="desc">LD Album Cover Tee</p>
-            <p class="price">$30.00</p>
-        </div>
+            <div class="merch">
+                <img class="shirt" src="images/shirt1.jpg" alt="shirt">
+                <p class="desc">LD Album Cover Tee</p>
+                <p class="price">$30.00</p>
+            </div>
 
-        <div class="merch">
-            <img class="shirt" src="images/shirt1.jpg" alt="shirt">
-            <p class="desc">LD Album Cover Tee</p>
-            <p class="price">$30.00</p>
-        </div>
+            <div class="merch">
+                <img class="shirt" src="images/shirt1.jpg" alt="shirt">
+                <p class="desc">LD Album Cover Tee</p>
+                <p class="price">$30.00</p>
+            </div>
 
-        <div class="merch">
-            <img class="shirt" src="images/shirt1.jpg" alt="shirt">
-            <p class="desc">LD Album Cover Tee</p>
-            <p class="price">$30.00</p>
+            <div class="merch">
+                <img class="shirt" src="images/shirt1.jpg" alt="shirt">
+                <p class="desc">LD Album Cover Tee</p>
+                <p class="price">$30.00</p>
+            </div>
         </div>
-    </div>
-
+    </a>
     
     <footer class="footer">
+
+<!-- 
+        <ul class="icons">
+            <li class="facebook"><a href="https://www.facebook.com/ONEOKROCK/" alt="facebook" target="_blank"><img src="images/facebook.png"></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/oneokrockofficial/?hl=en" alt="instagram" target="_blank"><img src="images/instagram.png"></a></li>
+            <li class="x"><a href="https://twitter.com/ONEOKROCK_japan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" alt="x" target="_blank"><img src="images/x.png"></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCzycs8MqvIY4nXWwS-v4J9g" alt="youtube" target="_blank"><img src="images/youtube.png"></a></li>
+            <li class="spotify"><a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" alt="spotify" target="_blank"><img src="images/spotify.png"></a></li>
+            <li class="tiktok"><a href="https://www.tiktok.com/@oneokrock_official?lang=en" alt="tiktok" target="_blank"><img src="images/tiktok.png"></a></li>
+        </ul> -->
+
+
+
         <a href="#">© 10969 INC. All Right Reserved.</a>
         <a href="https://www.atlanticrecords.com/terms-of-use" target="_blank">Terms & condition</a>
         <a href="https://privacy.wmg.com/ecom/privacy-policy" target="_blank">Privacy Policy</a>
@@ -194,6 +235,13 @@
             <div class="spotify"><a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" alt="spotify" target="_blank"><img src="images/spotify.png"></a></div>
             <div class="tiktok"><a href="https://www.tiktok.com/@oneokrock_official?lang=en" alt="tiktok" target="_blank"><img src="images/tiktok.png"></a></div>
         </div>
+        <!-- <ul class="copyright">
+            <li><a href="#">© 10969 INC. All Right Reserved.</a></li>
+            <li><a href="https://www.atlanticrecords.com/terms-of-use" target="_blank">Terms & condition</a></li>
+            <li><a href="https://privacy.wmg.com/ecom/privacy-policy" target="_blank">Privacy Policy</a></li>
+            <li><a href="https://store.oneokrock.com/en/contact_us-one-ok-rock.html" target="_blank">Contact</a></li>
+        </ul> -->
+
     </footer>
 </body>
 
