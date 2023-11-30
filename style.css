@@ -1,13 +1,10 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box;     not sure if needed */
-}
+    /* box-sizing: border-box;     not sure if needed /
+} */
 
-header {
-    /* padding: 0; */
-    background-color: #333;
-}
+
 
 /* .navbar {
     display: flex;
@@ -49,10 +46,18 @@ header {
 
 #navbar {
     justify-content: space-around;
-    /* justify-content: flex-start; */
     align-items: center;
-    /* height: 17vh; */
     height: 100px;  
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.5s;
+    z-index: 1000;
+}
+#navbar.hidden {
+    top: -100px; 
 }
 
 #navbar .logo img {
@@ -90,17 +95,17 @@ header {
 
 #navbar .nav-menu a:hover {
     background-color: #333;
-    color: red;
+    color:  #f44336;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: red;
+    text-decoration-color:  #f44336;
 }
 
 
 
 
 /*burger menu*/
-
+/* 
 #burger-nav{
     display: none;
     cursor: pointer;
@@ -152,7 +157,7 @@ header {
     .nav-menu,.active{
         left: 0;
     }
-}
+} */
 /* #burger-nav .burger-menu{
     position: relative;
     display: inline-block;
@@ -232,7 +237,6 @@ padding
     background-color: #333;
     padding: 20px;
     flex-direction: column;
-    
     align-items: center;
     text-align: center;
 }
@@ -240,10 +244,6 @@ padding
 .footer .icons{
     display: flex;
     list-style-type: none;
-    /* align-items: flex-end; */
-    /* width: 60%; */
-    /* padding-left: 40%; */
-    /* margin-right: 20px; */
 }
 
 
@@ -256,10 +256,7 @@ padding
     color: white;
     margin-right: 20px;
     font-size: 20px;
-    /* flex-direction: row; */
-    /* align-items: flex-start; */
-    /* align-items: center; */
-    /* flex-grow: 1; */
+    text-decoration: none;
 }
 
 /* newsletter */
@@ -304,7 +301,6 @@ body, html {
 /* hompage */
 .homepage {
     background-image: url('images/concert1.jpeg');
-    /* height: 100%; */
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -337,7 +333,7 @@ body, html {
     display: flex;
     justify-content: center;
     font-size: 25px;
-    color: red;
+    color:  #f44336;
     text-align: center;
     margin: 15px;
     width: 100%;   
@@ -381,7 +377,7 @@ body, html {
     display: flex;
     justify-content: center;
     font-size: 25px;
-    color: red;
+    color:  #f44336;
     text-align: center;
     margin: 15px;
     width: 100%;   
@@ -399,25 +395,6 @@ body, html {
     justify-content: center;
     align-items: center;
 }
-
-
-
-/* not in use */
-/* .tour-page .info h1{
-    font-size: 30px;
-    color: red;
-    padding-top: 45px;
-    padding-left: 45%;
-}
-
-.tour-page .info p{
-    text-align: center;
-    width: 60%;
-    color: white;
-    padding-top: 20px;
-    padding-left: 20%;
-    font-size: 20px;
-} */
 
 /* members page */
 
@@ -448,6 +425,7 @@ body, html {
     justify-content: center;
     margin: 0;
     padding: 0;
+    
 }
 
 .about-us ul {
@@ -455,15 +433,20 @@ body, html {
     justify-content: center;
     text-align: center;
     margin: 20px;
+    list-style-type: none;
+    
+}
+.about-us a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.about-us ul li :hover{
+    color:  #f44336;
 }
 
 .about-us ul li {
-    width: 150px;
-    height: 100px;
-    color: white;
-    float: left;
-    list-style-type: none;
-    font-size: 30px;
     margin: 0 100px;
 }
 
@@ -472,7 +455,7 @@ body, html {
     display: flex;
     flex-basis: 100%;
     justify-content: center;
-    color: red;
+    color:  #f44336;
     margin: 30px;
 }
 
@@ -485,32 +468,13 @@ body, html {
     font-family: arial, sans-serif;
     }
 
-/* .about-us .members{
-
-font-size: 30px;
-/* padding-top: 20px;
-padding-right: 60px;
-padding-left: 55px; 
-margin: 100px;
-
-} */
-
-
-/* .about-us .tour{
-    display: flex;
-    width: 500px;
-    height: auto;
-} */
-
-
-
 /* store page */
 .category ul {
     display: flex;
     justify-content: center;
     text-align: center;
     font-weight: bold;
-    flex-wrap: wrap; /*not sure if it works*/
+    flex-wrap: wrap; 
 }
 
 .category ul li {
@@ -524,7 +488,7 @@ margin: 100px;
 }
 
 .category ul li:first-child {
-    color: red;
+    color:  #f44336;
 }
 
 .clothing{
@@ -535,16 +499,12 @@ margin: 100px;
 }
 
 .clothing a {
-    /* display: flex; */
-    /* align-items: end; */
-    /* font-size: 25px; */
-    /* transition: color 0.15s; */
     color: black;
     text-decoration: none;
 }
 
 .clothing a:hover{
-    color: red;   
+    color:  #f44336;   
     
 }
 .merch{
@@ -561,12 +521,4 @@ margin: 100px;
     margin: 15px 0;
     text-align: center;
 }
-
-/* @media (max-width: 600px) {
-    .merch{
-        flex-basis: 100%;
-    }
-    
-} */
-
 
