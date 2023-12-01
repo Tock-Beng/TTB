@@ -14,6 +14,8 @@ As a ONE OK ROCK fan, I want to be able to purchase their merchandise, so that I
 
 As a ONE OK ROCK fan, I want a music section, so that I can view and listen to their latest songs.
 
+As a ONE OK ROCK fan, I want a newsletter subscription, so that I can receive latest updates on the band's development.
+
 wireframe
 https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=design&t=XzTk0N97iFCTV3I5-1
 
@@ -22,8 +24,28 @@ https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=desi
 
 ### existing features
 
--navigation bar
++ navigation bar - allows users to easily explore different sections of the website 
++ music page - by clicking the album cover, the page will redirect users to the band's music page
++ tour page - allows users to stay updated on the band's upcoming performances
++ about us page - allows users to view the band's history. Additionally, by clicking the band members name, the page will redirect users to the their instagram page.
++ merchandise store - redirect users to the product description page after clicking on the product
++ newsletter subscription - allows users to enter their email and get latest updates about the band's development
 
+## Technologies Used
+
++ HTML5
+- The project uses HTML to create the structure of the website.
++ CSS
+- The project uses CSS for styling and layout of to enhance the visual representation of the website.
++ Javascript (ES6)
+- The project uses Javscript for client-side scripting, enabling interactive and dynamic features on the website.
+
+## Testing
+
+1. newsletter:
+- go to the "footer" at the bottom of the page
+- try to submit an empty form and verify that an error message will pop up about the required fields 
+- try to submit the form wil valid inputs and verify the success message.
 
 ## Credits
 
@@ -49,6 +71,6 @@ https://www.figma.com/community/file/839558611085349133
 &
 https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 
-#h3 acknowldgement
+## acknowldgement
 + the store page was inspired from https://shop.acdc.com/
 + the music page was inspired from https://www.acdc.com/music/
