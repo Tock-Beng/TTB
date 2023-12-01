@@ -6,15 +6,15 @@ I have chosen to create a website for the Japanese band ONE OK ROCK. My goal is 
 
 The design process for creating the ONE OK ROCK website is to provide an engaging and user-friendly platform for fans and potiential visitors. The aim is to cater to their various needs, such as exploring the band's history, purchasing merchandise, stay informed about their tour dates, and lastly listen to their music.
 
-As a ONE OK ROCK fan, I want to be able to view the band's history, so that I can deepen my connection with the band and understand their journey to success.
++ As a ONE OK ROCK fan, I want to be able to view the band's history, so that I can deepen my connection with the band and understand their journey to success.
 
-As a ONE OK ROCK fan, I want a tour date page, so that I can plan and attend the ONE OK ROCK's upcoming concerts.
++ As a ONE OK ROCK fan, I want a tour date page, so that I can plan and attend the ONE OK ROCK's upcoming concerts.
 
-As a ONE OK ROCK fan, I want to be able to purchase their merchandise, so that I can show my support.
++ As a ONE OK ROCK fan, I want to be able to purchase their merchandise, so that I can show my support.
 
-As a ONE OK ROCK fan, I want a music section, so that I can view and listen to their latest songs.
++ As a ONE OK ROCK fan, I want a music section, so that I can view and listen to their latest songs.
 
-As a ONE OK ROCK fan, I want a newsletter subscription, so that I can receive latest updates on the band's development.
++ As a ONE OK ROCK fan, I want a newsletter subscription, so that I can receive latest updates on the band's development.
 
 wireframe
 https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=design&t=XzTk0N97iFCTV3I5-1
@@ -24,7 +24,7 @@ https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=desi
 
 ### existing features
 
-+ navigation bar - allows users to easily explore different sections of the website 
++ navigation bar - allows users to easily explore different sections of the website and will disappear once the user scrolls down. It will only reappear if the user is in the home page or scrolls up.
 + music page - by clicking the album cover, the page will redirect users to the band's music page
 + tour page - allows users to stay updated on the band's upcoming performances
 + about us page - allows users to view the band's history. Additionally, by clicking the band members name, the page will redirect users to the their instagram page.
@@ -34,18 +34,41 @@ https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=desi
 ## Technologies Used
 
 + HTML5
-- The project uses HTML to create the structure of the website.
+    - The project uses HTML to create the structure of the website.
 + CSS
-- The project uses CSS for styling and layout of to enhance the visual representation of the website.
+    - The project uses CSS for styling and layout of to enhance the visual representation of the website.
 + Javascript (ES6)
-- The project uses Javscript for client-side scripting, enabling interactive and dynamic features on the website.
+    - The project uses Javscript for client-side scripting, enabling interactive and dynamic features on the website.
 
 ## Testing
 
-1. newsletter:
-- go to the "footer" at the bottom of the page
-- try to submit an empty form and verify that an error message will pop up about the required fields 
-- try to submit the form wil valid inputs and verify the success message.
+1. navigation bar:
+    - click on any page that the user wants to visit, verify that the selected page loads correctly
+    - scroll down on any page, observe that the navigation bar disappears as the user scrolls down
+    - scroll up on any page, verify that the navigation bar reappears as the user scrolls up
+    - Navigate to the home page using the navigation bar.Confirm that the navigation bar is visible upon returning to the home page
+
+2. music page:
+    - go to the music page on the website
+    - click on any album cover on the page, verify that the page is redirects to the corresponding spotify playlist for the selected album
+
+3. tour page:
+    - go to the music page on the website
+    - click on any buy tickets button, verify that the users are redirected to external ticket purchase page
+
+4. about us page:
+    - go to the about us page, confirm that the history of ONE OK ROCK is present
+    - hover the mouse over the members name, verify that the color will turn red 
+    - click on the member's name, confirm that the page redirects to the chosen member's instagram
+
+5. merchandise page:
+    - go to the merchandise page, hover over any item's picuture or description, verify that the color of the item description turns red
+    - confirm that clicking on the item redirects the user to the speific product page in the official store 
+
+6. newsletter:
+    - go to the "footer" at the bottom of the page
+    - try to submit an empty form and verify that an error message will pop up about the required fields 
+    - try to submit the form wil valid inputs and verify the success message.
 
 ## Credits
 
@@ -67,7 +90,7 @@ https://www.figma.com/community/file/839558611085349133
 
 ### content
 
-+ disappearing navigation bar was copied from https://www.shecodes.io/athena/7982-how-to-make-a-nav-bar-show-on-scroll-up-disappear-on-scroll-down
++ disappearing navigation bar was retrieved from https://www.shecodes.io/athena/7982-how-to-make-a-nav-bar-show-on-scroll-up-disappear-on-scroll-down
 &
 https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 

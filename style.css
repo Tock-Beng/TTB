@@ -1,42 +1,9 @@
-/* *{
-    padding: 0;
+/* default margin and padding for body and html */
+body, html {
+    height: 100%;
     margin: 0;
-    /* box-sizing: border-box;     not sure if needed /
-} */
-
-
-
-/* .navbar {
-    display: flex;
-    background-color: #333;
-    margin: 0;
-    padding: 20px;
-    justify-content: space-between;
-    
-}
-
-.navbar .logo img {
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
     padding: 0;
 }
-
-.navbar .icons{
-    display: flex;  
-}
-
-.navbar .cart img{
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-}
-.navbar .profile img{
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-
-} */
 
 /* desktop nav */
 #navbar,
@@ -78,20 +45,10 @@
 }
 
 #navbar a {
-    /* display: flex; */
-    /* align-items: end; */
-    /* font-size: 25px; */
-    /* transition: color 0.15s; */
     color: white;
     text-decoration: none;
     margin-left: 40px;
 }
-
-/* #navbar .nav-links{
-    color: white;
-    text-decoration: none;
-    text-decoration-color: white;
-} */
 
 #navbar .nav-menu a:hover {
     background-color: #333;
@@ -101,138 +58,8 @@
     text-decoration-color:  #f44336;
 }
 
-
-
-
-/*burger menu*/
-/* 
-#burger-nav{
-    display: none;
-    cursor: pointer;
-}
-
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease in-out;
-    transition: all 0.3s ease in-out;
-    background-color: white;
-}
-
-@media screen and (max-width: 1000px){
-    #burger-nav{
-        display: block;
-    }
-
-    #burger-nav .active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    #burger-nav .active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #burger-nav .active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }   
-
-    .nav-item{
-        margin: 16px 0;
-    }
-
-    .nav-menu,.active{
-        left: 0;
-    }
-} */
-/* #burger-nav .burger-menu{
-    position: relative;
-    display: inline-block;
-}
-
-#burger-nav .burger-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-#burger-nav .burger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition: all 0.3 ease-in-out;
-  }
-#burger-nav .menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #333;
-    /* width: fit-content; *
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-  } */
-  
-
-/* media queries */
-
-
-  
-  /* nav bar */
-  /* @media screen and (max-width: 1200px) {
-    #navbar{
-      display: none;
-    }
-    #burger-nav {
-      display: flex;
-    }
-    #navbar .logo img {
-        width: 30px;  /* Adjust the size for screens below 1200px *
-        height: 20px; /* Adjust the corresponding height *
-    }
-} */
-
-
-
-
-
-
-
-/* #homepage{
-
-height: 1000px;
-width: 1000px;
-} */
-
-/*
-#homepage-image {
-width: 100%; /* Set the width of the image to 100% of its container 
-height: auto; /* Maintain the aspect ratio of the image 
-}*/
-
-/* #profile{
-padding
-} */
-
 /* footer */
-
-.footer{
+#footer{
     display: flex;
     background-color: #333;
     padding: 20px;
@@ -241,18 +68,18 @@ padding
     text-align: center;
 }
 
-.footer .icons{
+#footer .icons{
     display: flex;
     list-style-type: none;
 }
 
-
-.footer .copyright{
+#footer .copyright{
     display: flex;
     list-style-type: none;
     margin: 15px;
 }
-.footer a{
+
+#footer a{
     color: white;
     margin-right: 20px;
     font-size: 20px;
@@ -266,7 +93,6 @@ padding
     align-items: center;
   }
   
-  
 label {
     color: white;
     margin-right: 10px;
@@ -279,6 +105,7 @@ input {
     padding: 10px;
     border-radius: 5px 0 0 5px;
 }
+
 button {
     border: none;
     outline: none;
@@ -287,15 +114,6 @@ button {
     background-color: #f44336;
     color: white;
     cursor: pointer;
-}
-  
-
-
-
-body, html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 /* hompage */
@@ -310,10 +128,6 @@ body, html {
 }
 
 /* music page */
-#music{
-    display: block;
-    flex-basis: 100%;
-}
 
 .music-page {
     background-image: url('images/dark-grunge.jpg');
@@ -323,29 +137,26 @@ body, html {
     background-size: cover;
     position: relative;
     display: flex;
-    margin: 0;
-    padding: 0;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .music-page .music-title{
     display: flex;
+    flex-basis: 100%;
     justify-content: center;
     font-size: 25px;
     color:  #f44336;
     text-align: center;
-    margin: 15px;
-    width: 100%;   
-    height: 100%;
+
 }
 
 .music-page .music-info img {
-    width: 300px; /* Set the width of the image to 300px of its container */
+    width: 250px; 
     height: auto; 
     display: flex;
     flex-wrap: wrap;     
-    margin: 30px;   
+    margin: 20px;   
     flex-basis: 50%;
     flex-direction: column;
     justify-content: center;
@@ -353,11 +164,6 @@ body, html {
 }
 
 /* tour page */
-#tour-title{
-    display: block;
-    flex-basis: 100%;
-}
-
 .tour-page {
     background-image: url('images/dark-grunge.jpg');
     height: 100%;   
@@ -368,35 +174,73 @@ body, html {
     display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .tour-page .title{
     display: flex;
+    flex-basis: 100%;
     justify-content: center;
     font-size: 25px;
-    color:  #f44336;
-    text-align: center;
-    margin: 15px;
-    width: 100%;   
-    height: 100%;
+    color: #f44336;
 }
 
-.tour-page .tour-info img {
-    width: 300px; /* Set the width of the image to 300px of its container */
-    height: auto; 
+.tour-page .tour-list {
     display: flex;
-    flex-wrap: wrap;     
-    margin: 30px;   
-    flex-basis: 50%;
     flex-direction: column;
-    justify-content: center;
+    width: 80%;
+}
+
+.tour-page .tour-item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.tour-page .tour-item .tour-name {
+    font-size: 25px;
+    color: #f44336;
+    font-weight: bold;
+    width: 100%;
+}
+
+.tour-page .tour-item .tour-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+
+.tour-page .tour-item .tour-date {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.tour-page .tour-item .tour-location {
+    font-size: 25px;
+    color: white;
+}
+
+.tour-page .tour-item .tour-link a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #f44336;
+}
+
+.tour-page .tour-item .tour-link a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 /* members page */
-
 #members {
     display: flex;
     background-image: url('images/members.jpg');
@@ -405,11 +249,6 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    color: white;
-    padding: 20px 0;
-    /* justify-content: center;
-    align-items: center;
-    flex-direction: row; */
 }
 
 #about-us {
@@ -420,10 +259,7 @@ body, html {
     background-size: cover;
     position: relative;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    
+    justify-content: center;   
 }
 
 #about-us ul {
@@ -440,21 +276,21 @@ body, html {
     font-size: 30px;
 }
 
-#about-us ul li :hover{
-    color:  #f44336;
-}
-
 #about-us ul li {
     margin: 0 100px;
 }
 
+#about-us ul li :hover{
+    color:  #f44336;
+}
+
 #about-us .aboutUs{
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     flex-basis: 100%;
     justify-content: center;
     color:  #f44336;
-    margin: 30px;
+    margin: 20px;
 }
 
 #about-us .hist {
@@ -464,7 +300,7 @@ body, html {
     padding-left: 20%;
     font-size: 25px;
     font-family: arial, sans-serif;
-    }
+}
 
 /* store page */
 .category ul {

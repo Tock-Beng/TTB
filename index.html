@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONE OK ROCK</title>
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -15,7 +16,7 @@
             <div class="logo">
                 <a href="#home"><img src="images/logo.png" alt="logo"></a>
             </div>
-            
+            <!-- navigation links -->
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#music">Music</a></li>
                 <li class="nav-item"><a href="#tour">Tour</a></li>
@@ -24,18 +25,18 @@
             </ul>
 
         </nav>
+        <!-- Link to external script file -->
         <script src="script.js"></script>
-
     </header>
     
     <!-- home page -->
-    <div id="homepage"><a name="home"></a></div>   
+    <div id="homepage"><a id="home"></a></div>   
 
     <!-- music page -->
-    <a id="music" name="music">
+    <a id="music"></a>
         <div class="music-page">
             <div class="music-title"><h1>Music</h1></div>
-
+            <!-- Music containers with links to Spotify -->
             <div class="container">
                 <div class="music-info">
                     <a href="https://open.spotify.com/album/4OKBuE9F8MTCV7nnsBRcsK?si=GCvP7nk8S1eqhdlMFCG9RQ" target="_blank"><img src="images/album1.jpg" alt="music"></a>
@@ -45,6 +46,7 @@
                     <a href="https://open.spotify.com/album/5dWke9BKYdBq7YXbb7jrLC?si=q1HfXwd_S96ozDu5bMmSfA" target="_blank"><img src="images/album2.jpg" alt="music"></a>
                 </div>
             </div>
+            <!-- Music containers with links to Spotify -->
             <div class="container">
                 <div class="music-info">
                     <a href="https://open.spotify.com/album/0p1YL9nzIuKTonZH6Gq58i?si=5u3YDGo2SZW_SylTj-X2ug" target="_blank"><img src="images/album3.jpg" alt="music"></a>
@@ -54,6 +56,7 @@
                     <a href="https://open.spotify.com/album/5yyxuxoqWqmYIJcORvvnpL?si=1ZnWQdVWTfy3L4IRMfLSMw" target="_blank"><img src="images/album4.png" alt="music"></a>
                 </div>
             </div>
+            <!-- Music containers with links to Spotify -->
             <div class="container">
                 <div class="music-info">
                     <a href="https://open.spotify.com/album/1obI3635eoYwWYhGs2vEeP?si=atCE67eIS5WYzO7f9Fp_yg" target="_blank"><img src="images/album5.jpg" alt="music"></a>
@@ -64,51 +67,71 @@
                 </div>
             </div>
         </div>
-    </a>
-
+    
     <!-- tour page -->
-    <a id='tour-title' name="tour">
-        <!-- <img style="width: 100vw;height: 100vh;" src="images/dark-grunge.jpg"> -->
- 
+    <a id="tour"></a>
         <div class="tour-page">
             <div class="title"><h1>Tour</h1></div>
-    
-            <div class="container">
-                <div class="tour-info">
-                    <a href="#"><img src="images/tour.jpg" alt="tour"></a>       
+            <!-- Tour item containers with details -->
+            <div class="tour-list">
+                <div class="tour-item">
+                    <div class="tour-name">Luxury Disease Asia Tour</div>
+                    <div class="tour-info">
+                        <div class="tour-date">18 Dec 2023 (Mon)</div>
+                        <div class="tour-location">Singapore Indoor Stadium</div>
+                        <div class="tour-link"><a href="https://ticketmaster.sg/" target="_blank">Buy Tickets</a></div>
+                    </div>
                 </div>
-    
-                <div class="tour-info">
-                    <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+
+                <div class="tour-item">
+                    <div class="tour-name">Luxury Disease Asia Tour</div>
+                    <div class="tour-info">
+                        <div class="tour-date">20 Dec 2023 (Wed)</div>
+                        <div class="tour-location">Seoul, South Korea</div>
+                        <div class="tour-link"><a href="https://www.ticketlink.co.kr/home" target="_blank">Buy Tickets</a></div>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="tour-info">
-                    <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+                <div class="tour-item">
+                    <div class="tour-name">Luxury Disease Asia Tour</div>
+                    <div class="tour-info">
+                        <div class="tour-date">23 Dec 2023 (Sat)</div>
+                        <div class="tour-location">Bangkok, Thailand</div>
+                        <div class="tour-link"><a href="https://www.thaiticketmajor.com/concert/one-ok-rock-luxury-disease-asia-tour-2023-in-bangkok.html" target="_blank">Buy Tickets</a></div>
+                    </div>
                 </div>
-                
-                <div class="tour-info">
-                    <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+                <div class="tour-item">
+                    <div class="tour-name">Luxury Disease Asia Tour</div>
+                    <div class="tour-info">
+                        <div class="tour-date">26 Dec 2023 (Tue)</div>
+                        <div class="tour-location">Kualar Lumpur, Malaysia</div>
+                        <div class="tour-link"><a href="https://www.golive-asia.com/event-detail/63/ONE-OK-ROCK-Luxury-Disease-Asia-Tour-2023" target="_blank">Buy Tickets</a></div>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="tour-info">
-                    <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+                <div class="tour-item">
+                    <div class="tour-name">Luxury Disease Asia Tour</div>
+                    <div class="tour-info">
+                        <div class="tour-date">29 Dec 2023 (Fri)</div>
+                        <div class="tour-location">Bangkok, Thailand</div>
+                        <div class="tour-link"><a href="https://www.thaiticketmajor.com/concert/one-ok-rock-luxury-disease-asia-tour-2023-in-bangkok.html" target="_blank">Buy Tickets</a></div>
+                    </div>
                 </div>
-                
-                <div class="tour-info">
-                    <a href="#"><img src="images/tour.jpg" alt="tour"></a>
+                <div class="tour-item">
+                    <div class="tour-name">Luxury Disease Asia Tour</div>
+                    <div class="tour-info">
+                        <div class="tour-date">31 Dec 2023 (Sun)</div>
+                        <div class="tour-location">Chek Lap Kok, Hong Kong</div>
+                        <div class="tour-link"><a href="https://www.livenation.hk/" target="_blank">Buy Tickets</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </a>
 
     <!-- about us page -->
-    <a name="about">
+    <a id="about"></a>
         <div id="members"></div>
         <div id="about-us">
-            
-            <div class="text">
+            <!-- Links to individual band members' Instagram profiles -->
+            <div class="members-links">
                 <ul>
                     <li><a href="https://www.instagram.com/toru_10969/" target="_blank">Guitarist: TORU</a></li>
                     <li><a href="https://www.instagram.com/10969taka/?hl=en" target="_blank">Vocalist: TAKA</a></li>
@@ -116,11 +139,11 @@
                     <li><a href="https://www.instagram.com/toru_10969/" target="_blank">Bass: RYOTA</a></li>
                 </ul>
             <br><br>
-
+            <!-- About Us section -->
             <div class="aboutUs"><h1>About Us</h1></div>
-
+            <!-- Band history description -->
             <div class="hist">
-                <p >ONE OK ROCK is a Japanese rock band formed in 2005 and debuted in 2007. ONE OK ROCK has cultivated a following among the youth for their mix of
+                <p>ONE OK ROCK is a Japanese rock band formed in 2005 and debuted in 2007. ONE OK ROCK has cultivated a following among the youth for their mix of
                     emo and rock music paired with breathtaking live performances. Debuting in 2007, the band rose to the top of musical prominence, 
                     performing on stages from live house venues and summer festivals to the renowned Nippon Budokan. Their journey continued as they conquered outdoor stadiums, 
                     arenas, and deome venues to audiences across Japan.<br><br>
@@ -130,14 +153,11 @@
                     The band then joined Muse on their US and EU tour and are currently scheduled to end this year with their largest Asian arena tour to date.</p>
             </div>
             </div>
-        </div>
-    </a>
-
-    
-
+        </div>  
 
     <!--store page-->
-    <a name="store">
+    <a id="store"></a>
+        <!-- Store category links -->
         <div class="category">
             <ul>
                 <li>Home</li>
@@ -146,7 +166,7 @@
                 <li>Accessories</li>
             </ul>
         </div>
-
+        <!-- Clothing items with links to the store -->
         <div class="clothing">
             <div class="merch">
                 <a href="https://store.oneokrock.com/en/one-ok-rock/ld-album-cover-tee/M697032.html" target="_blank">
@@ -196,18 +216,18 @@
                 </a>
             </div>
         </div>
-    </a>
+    
     
     <!-- footer -->
-    <footer class="footer">
-
+    <footer id="footer">
+        <!-- Social media icons with links -->
         <ul class="icons">
-            <li class="facebook"><a href="https://www.facebook.com/ONEOKROCK/" alt="facebook" target="_blank"><img src="images/facebook.png"></a></li>
-            <li class="instagram"><a href="https://www.instagram.com/oneokrockofficial/?hl=en" alt="instagram" target="_blank"><img src="images/instagram.png"></a></li>
-            <li class="x"><a href="https://twitter.com/ONEOKROCK_japan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" alt="x" target="_blank"><img src="images/x.png"></a></li>
-            <li class="youtube"><a href="https://www.youtube.com/channel/UCzycs8MqvIY4nXWwS-v4J9g" alt="youtube" target="_blank"><img src="images/youtube.png"></a></li>
-            <li class="spotify"><a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" alt="spotify" target="_blank"><img src="images/spotify.png"></a></li>
-            <li class="tiktok"><a href="https://www.tiktok.com/@oneokrock_official?lang=en" alt="tiktok" target="_blank"><img src="images/tiktok.png"></a></li>
+            <li class="facebook"><a href="https://www.facebook.com/ONEOKROCK/" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/oneokrockofficial/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a></li>
+            <li class="x"><a href="https://twitter.com/ONEOKROCK_japan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/x.png" alt="x"></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/channel/UCzycs8MqvIY4nXWwS-v4J9g" target="_blank"><img src="images/youtube.png" alt="youtube"></a></li>
+            <li class="spotify"><a href="https://open.spotify.com/artist/7k73EtZwoPs516ZxE72KsO" target="_blank"><img src="images/spotify.png" alt="spotify"></a></li>
+            <li class="tiktok"><a href="https://www.tiktok.com/@oneokrock_official?lang=en" target="_blank"><img src="images/tiktok.png" alt="tiktok"></a></li>
         </ul>
 
         <!-- newsletter -->
@@ -218,7 +238,7 @@
         </div>    
         <script src="script.js"></script>
         
- 
+        <!-- Copyright information and links -->
         <ul class="copyright">
             <li><a href="#">© 10969 INC. All Right Reserved.</a></li>
             <li><a href="https://www.atlanticrecords.com/terms-of-use" target="_blank">Terms & condition</a></li>
