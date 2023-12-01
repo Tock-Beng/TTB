@@ -1,4 +1,4 @@
-# ONE OK ROCK 
+# ONE OK ROCK website
 
 I have chosen to create a website for the Japanese band ONE OK ROCK. My goal is to create a website that allows ONE OK ROCK fans or first-time visitors to be able to view the band’s history to foster a deeper connection between the audience and the artists. Additionally, I would like to create a online merchandise store to allow the fans to purchase their merch and showcase their support. By adding the news feature, fans can stay informed about the latest updates and developments about the band. Lastly, I would like to add another feature that allows fans to track the band’s tour dates so that they can track the band’s upcoming performances and stand a chance to attend them.
 
@@ -67,7 +67,7 @@ https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=desi
 
 6. newsletter:
     - go to the "footer" at the bottom of the page
-    - try to submit an empty form and verify that an error message will pop up about the required fields 
+    - try to submit an invalid field or empty form and verify that an error message will pop up about the required fields 
     - try to submit the form wil valid inputs and verify the success message.
 
 ## Credits

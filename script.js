@@ -18,22 +18,26 @@ window.onscroll = function () {
     prevScrollPos = currentScrollPos;
 };
 
+
 // JavaScript code for the footer
 // Get the email input and the subscribe button
-document.addEventListener("DOMContentLoaded", function() {
-    var email = document.getElementById("email");
-    var subscribe = document.getElementById("subscribe");
-    // Add a click event listener to the subscribe button
-    subscribe.addEventListener("click", function(event) {
-        event.preventDefault();
-        // Check if the email input is not empty
-        if (email.value) {
+document.addEventListener("DOMContentLoaded", function() { 
+    var email = document.getElementById("email"); 
+    var subscribe = document.getElementById("subscribe"); 
+    // Define the regex for email validation 
+    var emailRegex = /^.+@.+/; 
+    // Add a click event listener to the subscribe button 
+    subscribe.addEventListener("click", function(event) { 
+        event.preventDefault(); 
+        // Check if the email input matches the regex 
+        if (email.value.match(emailRegex)) { 
+            // Display a message to the user 
+            alert("Thank you for subscribing to our newsletter!"); 
+            email.value = ""; 
+        } else { 
             // Display a message to the user
-            alert("Thank you for subscribing to our newsletter!");
-            email.value = "";
-        } else {
-            // Display a message to the user
-            alert("Please enter a valid email address.");
-        }
-    });
+            alert("Please enter a valid email address."); 
+        } 
+    }); 
 });
+
