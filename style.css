@@ -299,7 +299,7 @@ body, html {
 }
 
 /* hompage */
-.homepage {
+#homepage {
     background-image: url('images/concert1.jpeg');
     height: 100%;
     background-position: center;
@@ -310,6 +310,11 @@ body, html {
 }
 
 /* music page */
+#music{
+    display: block;
+    flex-basis: 100%;
+}
+
 .music-page {
     background-image: url('images/dark-grunge.jpg');
     height: 100%;   
@@ -322,11 +327,6 @@ body, html {
     padding: 0;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-#music{
-    display: block;
-    flex-basis: 100%;
 }
 
 .music-page .music-title{
@@ -353,6 +353,10 @@ body, html {
 }
 
 /* tour page */
+#tour-title{
+    display: block;
+    flex-basis: 100%;
+}
 
 .tour-page {
     background-image: url('images/dark-grunge.jpg');
@@ -366,11 +370,6 @@ body, html {
     padding: 0;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-#tour-title{
-    display: block;
-    flex-basis: 100%;
 }
 
 .tour-page .title{
@@ -398,7 +397,7 @@ body, html {
 
 /* members page */
 
-.members {
+#members {
     display: flex;
     background-image: url('images/members.jpg');
     height: 100%;   
@@ -407,14 +406,13 @@ body, html {
     background-size: cover;
     position: relative;
     color: white;
-
     padding: 20px 0;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row; */
 }
 
-.about-us {
+#about-us {
     background-image: url('images/dark-grunge.jpg');
     height: 100%;   
     background-position: center;
@@ -428,29 +426,29 @@ body, html {
     
 }
 
-.about-us ul {
+#about-us ul {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     list-style-type: none;
     
 }
-.about-us a{
+#about-us a{
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
 
-.about-us ul li :hover{
+#about-us ul li :hover{
     color:  #f44336;
 }
 
-.about-us ul li {
+#about-us ul li {
     margin: 0 100px;
 }
 
-.about-us .aboutUs{
+#about-us .aboutUs{
     font-size: 30px;
     display: flex;
     flex-basis: 100%;
@@ -459,7 +457,7 @@ body, html {
     margin: 30px;
 }
 
-.about-us .hist {
+#about-us .hist {
     text-align: center;
     width: 60%;
     color: white;
