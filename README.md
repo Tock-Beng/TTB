@@ -1,9 +1,9 @@
 # TTB
-#h1 ONE OK ROCK 
+# h1 ONE OK ROCK 
 
 I have chosen to create a website for the Japanese band ONE OK ROCK. My goal is to create a website that allows ONE OK ROCK fans or first-time visitors to be able to view the band’s history to foster a deeper connection between the audience and the artists. Additionally, I would like to create a online merchandise store to allow the fans to purchase their merch and showcase their support. By adding the news feature, fans can stay informed about the latest updates and developments about the band. Lastly, I would like to add another feature that allows fans to track the band’s tour dates so that they can track the band’s upcoming performances and stand a chance to attend them.
 
-#h2 Design Process
+# h2 Design Process
 
 The design process for creating the ONE OK ROCK website is to provide an engaging and user-friendly platform for fans and potiential visitors. The aim is to cater to their various needs, such as exploring the band's history, purchasing merchandise, stay informed about their tour dates, and lastly listen to their music.
 
@@ -19,16 +19,16 @@ wireframe
 https://www.figma.com/file/OqFUtc1hTjOgqomPKe9VTZ/Untitled?type=design&mode=design&t=XzTk0N97iFCTV3I5-1
 
 
-#h2 Features
+# h2 Features
 
-#h3 existing features
+# h3 existing features
 
 -navigation bar
 
 
-#h2 Credits
+# h2 Credits
 
-#h3 media
+# h3 media
 + Dark grunge texture Free Photo. (2016, November 23). Freepik. https://www.freepik.com/free-photo/dark-grunge-texture_982950.htm#query=dark%20grey%20background&position=3&from_view=keyword&track=ais&uuid=783e76b5-0f8d-4cf6-ba1d-0dd59f053cf8#position=3&query=dark%20grey%20background
 
 + ONE OK ROCK. (n.d.). Live Nation Singapore. https://www.livenation.sg/artist-one-ok-rock-429083#international
@@ -44,7 +44,7 @@ https://www.figma.com/community/file/839558611085349133
 + ONE OK ROCK. (2023, August 24). ABOUT - ONE OK ROCK official website by 10969 Inc. https://www.oneokrock.com/en/about/
 
 
-#h3 content
+# h3 content
 
 + disappearing navigation bar was copied from https://www.shecodes.io/athena/7982-how-to-make-a-nav-bar-show-on-scroll-up-disappear-on-scroll-down
 &
